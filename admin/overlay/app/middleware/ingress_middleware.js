@@ -13,10 +13,7 @@ export default class IngressMiddleware {
         }
         const body = response.getBody();
         if (typeof body === 'string') {
-            const contentType = response.getHeader('content-type');
-            if (typeof contentType === 'string' && contentType.includes('text/html')) {
-                response.send(rewriteIngressHtml(body, ingressPath));
-            }
+            response.send(rewriteIngressHtml(body, ingressPath));
             return;
         }
         if (body && typeof body === 'object' && 'url' in body && typeof body.url === 'string') {
