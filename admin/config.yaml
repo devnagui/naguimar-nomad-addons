@@ -1,6 +1,6 @@
 name: "Project NOMAD Command Center"
 description: "Project NOMAD web interface and API"
-version: "1.35.2-haos.5"
+version: "1.35.2-haos.6"
 slug: "naguimar_nomad_admin"
 arch:
   - aarch64
@@ -10,7 +10,6 @@ boot: manual
 protected: true
 ingress: true
 ingress_port: 8080
-ingress_entry: "/"
 ingress_stream: true
 panel_icon: "mdi:view-dashboard"
 panel_title: "Project NOMAD Command Center"

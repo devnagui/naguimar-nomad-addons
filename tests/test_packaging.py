@@ -50,6 +50,7 @@ class PackagingTests(unittest.TestCase):
         self.assertEqual(manifests["redis"]["name"], "Project NOMAD Redis")
         self.assertEqual(manifests["admin"]["ports"]["8080/tcp"], 8088)
         self.assertTrue(manifests["admin"]["ingress"])
+        self.assertNotIn("ingress_entry", manifests["admin"])
         self.assertEqual(manifests["admin"]["webui"], "http://[HOST]:[PORT:8080]/")
         self.assertNotIn("ports", manifests["redis"])
         for manifest in manifests.values():
