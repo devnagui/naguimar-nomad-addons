@@ -1,6 +1,6 @@
 name: "Naguimar NOMAD Command Center"
 description: "Experimental protected ARM64 Command Center without Docker access"
-version: "1.35.2-haos.2"
+version: "1.35.2-haos.3"
 slug: "naguimar_nomad_admin"
 arch:
   - aarch64
@@ -8,6 +8,13 @@ init: false
 startup: application
 boot: manual
 protected: true
+ingress: true
+ingress_port: 8080
+ingress_entry: "/"
+ingress_stream: true
+panel_icon: "mdi:view-dashboard"
+panel_title: "Command Center"
+panel_admin: false
 ports:
   8080/tcp: 8088
 ports_description:
@@ -34,6 +41,7 @@ environment:
   NOMAD_PLATFORM: "haos"
   NOMAD_KIWIX_URL: "http://local-naguimar-kiwix.local.hass.io:8111/wiki/"
   NOMAD_KIWIX_PUBLIC_URL: "https://naguimar.tplinkdns.com:9999/app/local_naguimar_kiwix"
+  NOMAD_ALLOW_IFRAME: "true"
 options:
   app_key: ""
   db_password: ""

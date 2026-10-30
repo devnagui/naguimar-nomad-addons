@@ -1,0 +1,1 @@
+import{u as t}from"./useQuery-D2wpG6YK.js";import{a as u}from"./app-k7CCx0mS.js";const p=()=>t({queryKey:["app-auto-update-status"],queryFn:()=>u.getAppAutoUpdateStatus(),refetchOnWindowFocus:!1});export{p as u};

@@ -1,0 +1,1 @@
+const R={OTC:"HUMAN OTC DRUG",RX:"HUMAN PRESCRIPTION DRUG"};export{R as P};

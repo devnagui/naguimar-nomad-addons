@@ -1,0 +1,1150 @@
+{
+  "_ActiveDownloads-DdVl7aTw.js": {
+    "file": "ActiveDownloads-DdVl7aTw.js",
+    "name": "ActiveDownloads",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useQuery-D2wpG6YK.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledModal-BklY3dXp.js",
+      "_IconLoader2-B3Po-4uP.js"
+    ]
+  },
+  "_Alert-D4qKT6ql.js": {
+    "file": "Alert-D4qKT6ql.js",
+    "name": "Alert",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_AppLayout-pKEzAA-T.js": {
+    "file": "AppLayout-pKEzAA-T.js",
+    "name": "AppLayout",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_Footer-BTIDhQrS.js",
+      "_index-B6h66HZ1.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_StyledModal-BklY3dXp.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_service_names-CfmN8D4G.js"
+    ]
+  },
+  "_CreatorPackCard-Brx1NAby.js": {
+    "file": "CreatorPackCard-Brx1NAby.js",
+    "name": "CreatorPackCard",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js",
+      "_IconLoader2-B3Po-4uP.js"
+    ]
+  },
+  "_CreatorPacksSection-CHLdr7je.js": {
+    "file": "CreatorPacksSection-CHLdr7je.js",
+    "name": "CreatorPacksSection",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useCreatorPacks-LoSknagc.js",
+      "_ActiveDownloads-DdVl7aTw.js",
+      "_CreatorPackCard-Brx1NAby.js",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_CuratedCollectionCard-6D6YN-hc.js": {
+    "file": "CuratedCollectionCard-6D6YN-hc.js",
+    "name": "CuratedCollectionCard",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_Dashboard-BZUQPGSy.css": {
+    "file": "Dashboard-BZUQPGSy.css",
+    "src": "_Dashboard-BZUQPGSy.css"
+  },
+  "_Dashboard-DXSRlSsB.js": {
+    "file": "Dashboard-DXSRlSsB.js",
+    "name": "Dashboard",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ],
+    "css": [
+      "Dashboard-BZUQPGSy.css"
+    ]
+  },
+  "_DebugInfoModal-QS17VQh2.js": {
+    "file": "DebugInfoModal-QS17VQh2.js",
+    "name": "DebugInfoModal",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_Footer-BTIDhQrS.js": {
+    "file": "Footer-BTIDhQrS.js",
+    "name": "Footer",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_GpuPassthroughAlert-BW79BzV0.js": {
+    "file": "GpuPassthroughAlert-BW79BzV0.js",
+    "name": "GpuPassthroughAlert",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_Alert-D4qKT6ql.js",
+      "_StyledModal-BklY3dXp.js",
+      "_Input-YiGrxySs.js"
+    ]
+  },
+  "_HorizontalBarChart-BVUgLH6P.js": {
+    "file": "HorizontalBarChart-BVUgLH6P.js",
+    "name": "HorizontalBarChart",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_IconBolt-GleoSGL2.js": {
+    "file": "IconBolt-GleoSGL2.js",
+    "name": "IconBolt",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IconChartBar-BqltJl_C.js": {
+    "file": "IconChartBar-BqltJl_C.js",
+    "name": "IconChartBar",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IconFirstAidKit-CKD-vcpT.js": {
+    "file": "IconFirstAidKit-CKD-vcpT.js",
+    "name": "IconFirstAidKit",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IconLoader2-B3Po-4uP.js": {
+    "file": "IconLoader2-B3Po-4uP.js",
+    "name": "IconLoader2",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IconMapRoute-e4eSfan-.js": {
+    "file": "IconMapRoute-e4eSfan-.js",
+    "name": "IconMapRoute",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IconPackage-2RY3gW7K.js": {
+    "file": "IconPackage-2RY3gW7K.js",
+    "name": "IconPackage",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IconPill-BXHiGyEw.js": {
+    "file": "IconPill-BXHiGyEw.js",
+    "name": "IconPill",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_InfoCard-Bk5oagT8.js": {
+    "file": "InfoCard-Bk5oagT8.js",
+    "name": "InfoCard",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_InfoTooltip-BQ2qawpo.js": {
+    "file": "InfoTooltip-BQ2qawpo.js",
+    "name": "InfoTooltip",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_IngestStatus-nS9WHPYu.js": {
+    "file": "IngestStatus-nS9WHPYu.js",
+    "name": "IngestStatus",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_Input-YiGrxySs.js": {
+    "file": "Input-YiGrxySs.js",
+    "name": "Input",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_InstallActivityFeed-BuxgNQGQ.js": {
+    "file": "InstallActivityFeed-BuxgNQGQ.js",
+    "name": "InstallActivityFeed",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_broadcast-BDCJsZ69.js",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_LabelBlocks-CTdXC_VN.js": {
+    "file": "LabelBlocks-CTdXC_VN.js",
+    "name": "LabelBlocks",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_Select-BOMAh-l2.js": {
+    "file": "Select-BOMAh-l2.js",
+    "name": "Select",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js",
+      "_use-resolve-button-type-BZU2bXq0.js"
+    ]
+  },
+  "_SettingsLayout-D9ccdfR4.js": {
+    "file": "SettingsLayout-D9ccdfR4.js",
+    "name": "SettingsLayout",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_StyledModal-BklY3dXp.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "_StyledModal-BklY3dXp.js": {
+    "file": "StyledModal-BklY3dXp.js",
+    "name": "StyledModal",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_StyledSectionHeader-Cir4ZWsI.js": {
+    "file": "StyledSectionHeader-Cir4ZWsI.js",
+    "name": "StyledSectionHeader",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_StyledSidebar-CJgUlEKn.js": {
+    "file": "StyledSidebar-CJgUlEKn.js",
+    "name": "StyledSidebar",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js",
+      "_DebugInfoModal-QS17VQh2.js"
+    ]
+  },
+  "_StyledTable-cdwX1Xkg.js": {
+    "file": "StyledTable-cdwX1Xkg.js",
+    "name": "StyledTable",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_Switch-CRBYOpK4.js": {
+    "file": "Switch-CRBYOpK4.js",
+    "name": "Switch",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_UpdateServiceModal-DTgNaR0E.js": {
+    "file": "UpdateServiceModal-DTgNaR0E.js",
+    "name": "UpdateServiceModal",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_WikipediaSelector-D_wer5Fg.js": {
+    "file": "WikipediaSelector-D_wer5Fg.js",
+    "name": "WikipediaSelector",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js",
+      "_IconLoader2-B3Po-4uP.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useSystemInfo-CxYIUkfT.js",
+      "_useDiskDisplayData-uM4WCV68.js",
+      "_StyledTable-cdwX1Xkg.js"
+    ]
+  },
+  "_broadcast-BDCJsZ69.js": {
+    "file": "broadcast-BDCJsZ69.js",
+    "name": "broadcast"
+  },
+  "_conditions-BGfpbrLL.js": {
+    "file": "conditions-BGfpbrLL.js",
+    "name": "conditions",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js",
+      "_drug_reference-BFn9F7Ox.js"
+    ]
+  },
+  "_drug_reference-BFn9F7Ox.js": {
+    "file": "drug_reference-BFn9F7Ox.js",
+    "name": "drug_reference"
+  },
+  "_index-B6h66HZ1.js": {
+    "file": "index-B6h66HZ1.js",
+    "name": "index",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_StyledModal-BklY3dXp.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js"
+    ],
+    "css": [
+      "index-B6oDHAMv.css"
+    ]
+  },
+  "_index-B6oDHAMv.css": {
+    "file": "index-B6oDHAMv.css",
+    "src": "_index-B6oDHAMv.css"
+  },
+  "_index-Ct4iCC18.js": {
+    "file": "index-Ct4iCC18.js",
+    "name": "index",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_navigation-Bf-TSxZo.js": {
+    "file": "navigation-Bf-TSxZo.js",
+    "name": "navigation"
+  },
+  "_service_names-CfmN8D4G.js": {
+    "file": "service_names-CfmN8D4G.js",
+    "name": "service_names"
+  },
+  "_use-resolve-button-type-BZU2bXq0.js": {
+    "file": "use-resolve-button-type-BZU2bXq0.js",
+    "name": "use-resolve-button-type",
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledModal-BklY3dXp.js"
+    ]
+  },
+  "_useAppAutoUpdateStatus-BLaLoRxj.js": {
+    "file": "useAppAutoUpdateStatus-BLaLoRxj.js",
+    "name": "useAppAutoUpdateStatus",
+    "imports": [
+      "_useQuery-D2wpG6YK.js",
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useCreatorPacks-LoSknagc.js": {
+    "file": "useCreatorPacks-LoSknagc.js",
+    "name": "useCreatorPacks",
+    "imports": [
+      "_useQuery-D2wpG6YK.js",
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useDebounce-D9wODYQR.js": {
+    "file": "useDebounce-D9wODYQR.js",
+    "name": "useDebounce",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useDiskDisplayData-uM4WCV68.js": {
+    "file": "useDiskDisplayData-uM4WCV68.js",
+    "name": "useDiskDisplayData",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useInternetStatus-F56kHrmP.js": {
+    "file": "useInternetStatus-F56kHrmP.js",
+    "name": "useInternetStatus",
+    "imports": [
+      "_useQuery-D2wpG6YK.js",
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useMutation-B_jXVN1U.js": {
+    "file": "useMutation-B_jXVN1U.js",
+    "name": "useMutation",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useQuery-D2wpG6YK.js": {
+    "file": "useQuery-D2wpG6YK.js",
+    "name": "useQuery",
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useServiceInstalledStatus-DwR1luF8.js": {
+    "file": "useServiceInstalledStatus-DwR1luF8.js",
+    "name": "useServiceInstalledStatus",
+    "imports": [
+      "_useQuery-D2wpG6YK.js",
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useSystemInfo-CxYIUkfT.js": {
+    "file": "useSystemInfo-CxYIUkfT.js",
+    "name": "useSystemInfo",
+    "imports": [
+      "_useQuery-D2wpG6YK.js",
+      "inertia/app/app.tsx"
+    ]
+  },
+  "_useSystemSetting-DjF3XBCI.js": {
+    "file": "useSystemSetting-DjF3XBCI.js",
+    "name": "useSystemSetting",
+    "imports": [
+      "_useQuery-D2wpG6YK.js",
+      "inertia/app/app.tsx"
+    ]
+  },
+  "inertia/app/app.tsx": {
+    "file": "app-k7CCx0mS.js",
+    "name": "app",
+    "src": "inertia/app/app.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "node_modules/@tanstack/query-devtools/build/DevtoolsComponent/B5PP2USH.js",
+      "inertia/pages/about.tsx",
+      "inertia/pages/chat.tsx",
+      "inertia/pages/conditions/show.tsx",
+      "inertia/pages/docs/show.tsx",
+      "inertia/pages/drug-reference/index.tsx",
+      "inertia/pages/drug-reference/interactions.tsx",
+      "inertia/pages/drug-reference/show.tsx",
+      "inertia/pages/easy-setup/complete.tsx",
+      "inertia/pages/easy-setup/index.tsx",
+      "inertia/pages/errors/not_found.tsx",
+      "inertia/pages/errors/server_error.tsx",
+      "inertia/pages/home.tsx",
+      "inertia/pages/maps.tsx",
+      "inertia/pages/settings/advanced.tsx",
+      "inertia/pages/settings/apps.tsx",
+      "inertia/pages/settings/benchmark.tsx",
+      "inertia/pages/settings/creator-packs.tsx",
+      "inertia/pages/settings/legal.tsx",
+      "inertia/pages/settings/maps.tsx",
+      "inertia/pages/settings/models.tsx",
+      "inertia/pages/settings/support.tsx",
+      "inertia/pages/settings/system.tsx",
+      "inertia/pages/settings/update.tsx",
+      "inertia/pages/settings/zim/index.tsx",
+      "inertia/pages/settings/zim/remote-explorer.tsx",
+      "inertia/pages/supply-depot.tsx"
+    ],
+    "css": [
+      "app-BKh4SMBK.css"
+    ]
+  },
+  "inertia/pages/about.tsx": {
+    "file": "about-DVTWz7g9.js",
+    "name": "about",
+    "src": "inertia/pages/about.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_StyledModal-BklY3dXp.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js"
+    ]
+  },
+  "inertia/pages/chat.tsx": {
+    "file": "chat-BdMWcPHM.js",
+    "name": "chat",
+    "src": "inertia/pages/chat.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_StyledModal-BklY3dXp.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js"
+    ]
+  },
+  "inertia/pages/conditions/show.tsx": {
+    "file": "show-CPXd-0MP.js",
+    "name": "show",
+    "src": "inertia/pages/conditions/show.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_conditions-BGfpbrLL.js",
+      "_StyledModal-BklY3dXp.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_drug_reference-BFn9F7Ox.js"
+    ]
+  },
+  "inertia/pages/docs/show.tsx": {
+    "file": "show-C5zKcmzi.js",
+    "name": "show",
+    "src": "inertia/pages/docs/show.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useQuery-D2wpG6YK.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_StyledModal-BklY3dXp.js",
+      "_DebugInfoModal-QS17VQh2.js"
+    ]
+  },
+  "inertia/pages/drug-reference/index.tsx": {
+    "file": "index-C3avZJF2.js",
+    "name": "index",
+    "src": "inertia/pages/drug-reference/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_StyledModal-BklY3dXp.js",
+      "_conditions-BGfpbrLL.js",
+      "_drug_reference-BFn9F7Ox.js",
+      "_IngestStatus-nS9WHPYu.js",
+      "_use-resolve-button-type-BZU2bXq0.js",
+      "_IconFirstAidKit-CKD-vcpT.js",
+      "_IconPill-BXHiGyEw.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js"
+    ]
+  },
+  "inertia/pages/drug-reference/interactions.tsx": {
+    "file": "interactions-CYlNWuzQ.js",
+    "name": "interactions",
+    "src": "inertia/pages/drug-reference/interactions.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_StyledModal-BklY3dXp.js",
+      "_drug_reference-BFn9F7Ox.js",
+      "_LabelBlocks-CTdXC_VN.js",
+      "_IngestStatus-nS9WHPYu.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js"
+    ]
+  },
+  "inertia/pages/drug-reference/show.tsx": {
+    "file": "show-CAXIqQ8y.js",
+    "name": "show",
+    "src": "inertia/pages/drug-reference/show.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_drug_reference-BFn9F7Ox.js",
+      "_LabelBlocks-CTdXC_VN.js",
+      "_StyledModal-BklY3dXp.js",
+      "_IconFirstAidKit-CKD-vcpT.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js"
+    ]
+  },
+  "inertia/pages/easy-setup/complete.tsx": {
+    "file": "complete-BWpVTqIJ.js",
+    "name": "complete",
+    "src": "inertia/pages/easy-setup/complete.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_StyledModal-BklY3dXp.js",
+      "_Alert-D4qKT6ql.js",
+      "_useInternetStatus-F56kHrmP.js",
+      "_InstallActivityFeed-BuxgNQGQ.js",
+      "_ActiveDownloads-DdVl7aTw.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_broadcast-BDCJsZ69.js",
+      "_IconLoader2-B3Po-4uP.js"
+    ]
+  },
+  "inertia/pages/easy-setup/index.tsx": {
+    "file": "index-CTLrzlPx.js",
+    "name": "index",
+    "src": "inertia/pages/easy-setup/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_AppLayout-pKEzAA-T.js",
+      "_StyledModal-BklY3dXp.js",
+      "_CuratedCollectionCard-6D6YN-hc.js",
+      "_WikipediaSelector-D_wer5Fg.js",
+      "_CreatorPackCard-Brx1NAby.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_Alert-D4qKT6ql.js",
+      "_useInternetStatus-F56kHrmP.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_useSystemInfo-CxYIUkfT.js",
+      "_useDiskDisplayData-uM4WCV68.js",
+      "_service_names-CfmN8D4G.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_IconLoader2-B3Po-4uP.js"
+    ]
+  },
+  "inertia/pages/errors/not_found.tsx": {
+    "file": "not_found-CvF4WwQv.js",
+    "name": "not_found",
+    "src": "inertia/pages/errors/not_found.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "inertia/pages/errors/server_error.tsx": {
+    "file": "server_error-R0i6iud3.js",
+    "name": "server_error",
+    "src": "inertia/pages/errors/server_error.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  },
+  "inertia/pages/home.tsx": {
+    "file": "home-CG0bSrQX.js",
+    "name": "home",
+    "src": "inertia/pages/home.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_navigation-Bf-TSxZo.js",
+      "_StyledModal-BklY3dXp.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_Alert-D4qKT6ql.js",
+      "_service_names-CfmN8D4G.js",
+      "_Input-YiGrxySs.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_IconPill-BXHiGyEw.js",
+      "_IconBolt-GleoSGL2.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js"
+    ]
+  },
+  "inertia/pages/maps.tsx": {
+    "file": "maps-B-gy6v--.js",
+    "name": "maps",
+    "src": "inertia/pages/maps.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_Footer-BTIDhQrS.js",
+      "_StyledModal-BklY3dXp.js",
+      "_IconFirstAidKit-CKD-vcpT.js",
+      "_IconPill-BXHiGyEw.js",
+      "_IconBolt-GleoSGL2.js",
+      "_IconPackage-2RY3gW7K.js",
+      "_index-Ct4iCC18.js",
+      "_Alert-D4qKT6ql.js",
+      "_DebugInfoModal-QS17VQh2.js"
+    ],
+    "css": [
+      "maps-PhPnDjd-.css"
+    ]
+  },
+  "inertia/pages/settings/advanced.tsx": {
+    "file": "advanced-BZSlNIio.js",
+    "name": "advanced",
+    "src": "inertia/pages/settings/advanced.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_Alert-D4qKT6ql.js",
+      "_Input-YiGrxySs.js",
+      "_useMutation-B_jXVN1U.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "inertia/pages/settings/apps.tsx": {
+    "file": "apps-DKUVQsrl.js",
+    "name": "apps",
+    "src": "inertia/pages/settings/apps.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledTable-cdwX1Xkg.js",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_navigation-Bf-TSxZo.js",
+      "_StyledModal-BklY3dXp.js",
+      "_InstallActivityFeed-BuxgNQGQ.js",
+      "_UpdateServiceModal-DTgNaR0E.js",
+      "_useInternetStatus-F56kHrmP.js",
+      "_broadcast-BDCJsZ69.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "inertia/pages/settings/benchmark.tsx": {
+    "file": "benchmark-BTbuKygi.js",
+    "name": "benchmark",
+    "src": "inertia/pages/settings/benchmark.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_InfoCard-Bk5oagT8.js",
+      "_Alert-D4qKT6ql.js",
+      "_StyledModal-BklY3dXp.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_service_names-CfmN8D4G.js",
+      "_broadcast-BDCJsZ69.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "inertia/pages/settings/creator-packs.tsx": {
+    "file": "creator-packs-Cjc8RnNm.js",
+    "name": "creator-packs",
+    "src": "inertia/pages/settings/creator-packs.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_CreatorPacksSection-CHLdr7je.js",
+      "_ActiveDownloads-DdVl7aTw.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_StyledModal-BklY3dXp.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useQuery-D2wpG6YK.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_CreatorPackCard-Brx1NAby.js",
+      "_IconLoader2-B3Po-4uP.js",
+      "_StyledSectionHeader-Cir4ZWsI.js"
+    ]
+  },
+  "inertia/pages/settings/legal.tsx": {
+    "file": "legal-Ds5M4U4O.js",
+    "name": "legal",
+    "src": "inertia/pages/settings/legal.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_StyledModal-BklY3dXp.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "inertia/pages/settings/maps.tsx": {
+    "file": "maps-DECyAISf.js",
+    "name": "maps",
+    "src": "inertia/pages/settings/maps.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledTable-cdwX1Xkg.js",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_Input-YiGrxySs.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_ActiveDownloads-DdVl7aTw.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_CuratedCollectionCard-6D6YN-hc.js",
+      "_Alert-D4qKT6ql.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_IconLoader2-B3Po-4uP.js"
+    ]
+  },
+  "inertia/pages/settings/models.tsx": {
+    "file": "models--yLhRYws.js",
+    "name": "models",
+    "src": "inertia/pages/settings/models.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_StyledTable-cdwX1Xkg.js",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_Alert-D4qKT6ql.js",
+      "_service_names-CfmN8D4G.js",
+      "_Switch-CRBYOpK4.js",
+      "_Select-BOMAh-l2.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Input-YiGrxySs.js",
+      "_useDebounce-D9wODYQR.js",
+      "_IconLoader2-B3Po-4uP.js",
+      "_useSystemInfo-CxYIUkfT.js",
+      "_GpuPassthroughAlert-BW79BzV0.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_use-resolve-button-type-BZU2bXq0.js"
+    ]
+  },
+  "inertia/pages/settings/support.tsx": {
+    "file": "support-dWmgj3RY.js",
+    "name": "support",
+    "src": "inertia/pages/settings/support.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "inertia/pages/settings/system.tsx": {
+    "file": "system-CKt4nIS0.js",
+    "name": "system",
+    "src": "inertia/pages/settings/system.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_useDiskDisplayData-uM4WCV68.js",
+      "_InfoCard-Bk5oagT8.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_Alert-D4qKT6ql.js",
+      "_GpuPassthroughAlert-BW79BzV0.js",
+      "_useSystemInfo-CxYIUkfT.js",
+      "_StyledModal-BklY3dXp.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_Input-YiGrxySs.js"
+    ]
+  },
+  "inertia/pages/settings/update.tsx": {
+    "file": "update-CBHsZ8_h.js",
+    "name": "update",
+    "src": "inertia/pages/settings/update.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_Alert-D4qKT6ql.js",
+      "_Input-YiGrxySs.js",
+      "_Switch-CRBYOpK4.js",
+      "_useMutation-B_jXVN1U.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useAppAutoUpdateStatus-BLaLoRxj.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_ActiveDownloads-DdVl7aTw.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_IconLoader2-B3Po-4uP.js"
+    ]
+  },
+  "inertia/pages/settings/zim/index.tsx": {
+    "file": "index-D3u6p-vd.js",
+    "name": "index",
+    "src": "inertia/pages/settings/zim/index.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_Alert-D4qKT6ql.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_service_names-CfmN8D4G.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js"
+    ]
+  },
+  "inertia/pages/settings/zim/remote-explorer.tsx": {
+    "file": "remote-explorer-D7Sfxcev.js",
+    "name": "remote-explorer",
+    "src": "inertia/pages/settings/zim/remote-explorer.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_SettingsLayout-D9ccdfR4.js",
+      "_StyledModal-BklY3dXp.js",
+      "_useInternetStatus-F56kHrmP.js",
+      "_Alert-D4qKT6ql.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_Input-YiGrxySs.js",
+      "_useDebounce-D9wODYQR.js",
+      "_WikipediaSelector-D_wer5Fg.js",
+      "_CreatorPacksSection-CHLdr7je.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_ActiveDownloads-DdVl7aTw.js",
+      "_service_names-CfmN8D4G.js",
+      "_StyledSidebar-CJgUlEKn.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_useCreatorPacks-LoSknagc.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_IconMapRoute-e4eSfan-.js",
+      "_IconLoader2-B3Po-4uP.js",
+      "_useSystemInfo-CxYIUkfT.js",
+      "_useDiskDisplayData-uM4WCV68.js",
+      "_CreatorPackCard-Brx1NAby.js"
+    ]
+  },
+  "inertia/pages/supply-depot.tsx": {
+    "file": "supply-depot-DbPxrlVH.js",
+    "name": "supply-depot",
+    "src": "inertia/pages/supply-depot.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx",
+      "_AppLayout-pKEzAA-T.js",
+      "_StyledModal-BklY3dXp.js",
+      "_InstallActivityFeed-BuxgNQGQ.js",
+      "_StyledTable-cdwX1Xkg.js",
+      "_Alert-D4qKT6ql.js",
+      "_Input-YiGrxySs.js",
+      "_Select-BOMAh-l2.js",
+      "_navigation-Bf-TSxZo.js",
+      "_StyledSectionHeader-Cir4ZWsI.js",
+      "_UpdateServiceModal-DTgNaR0E.js",
+      "_useInternetStatus-F56kHrmP.js",
+      "_useAppAutoUpdateStatus-BLaLoRxj.js",
+      "_broadcast-BDCJsZ69.js",
+      "_service_names-CfmN8D4G.js",
+      "_IconPackage-2RY3gW7K.js",
+      "_IconChartBar-BqltJl_C.js",
+      "_Footer-BTIDhQrS.js",
+      "_DebugInfoModal-QS17VQh2.js",
+      "_index-B6h66HZ1.js",
+      "_useQuery-D2wpG6YK.js",
+      "_useMutation-B_jXVN1U.js",
+      "_Dashboard-DXSRlSsB.js",
+      "_HorizontalBarChart-BVUgLH6P.js",
+      "_Switch-CRBYOpK4.js",
+      "_index-Ct4iCC18.js",
+      "_InfoTooltip-BQ2qawpo.js",
+      "_useSystemSetting-DjF3XBCI.js",
+      "_useServiceInstalledStatus-DwR1luF8.js",
+      "_use-resolve-button-type-BZU2bXq0.js"
+    ]
+  },
+  "node_modules/@tanstack/query-devtools/build/DevtoolsComponent/B5PP2USH.js": {
+    "file": "B5PP2USH-BXno66rN.js",
+    "name": "B5PP2USH",
+    "src": "node_modules/@tanstack/query-devtools/build/DevtoolsComponent/B5PP2USH.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "inertia/app/app.tsx"
+    ]
+  }
+}
