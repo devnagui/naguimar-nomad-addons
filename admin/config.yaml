@@ -1,0 +1,39 @@
+name: "Naguimar NOMAD Command Center"
+description: "Experimental protected ARM64 Command Center without Docker access"
+version: "1.35.2"
+slug: "naguimar_nomad_admin"
+arch:
+  - aarch64
+init: false
+startup: application
+boot: manual
+protected: true
+ports:
+  8080/tcp: 8088
+ports_description:
+  8080/tcp: "NOMAD Command Center"
+map:
+  - data:rw
+  - media:rw
+environment:
+  NODE_ENV: "production"
+  HOST: "0.0.0.0"
+  PORT: "8080"
+  URL: "http://192.168.68.122:8088"
+  LOG_LEVEL: "info"
+  DISABLE_COMPRESSION: "false"
+  DB_HOST: "core-mariadb.local.hass.io"
+  DB_PORT: "3306"
+  DB_USER: "nomad_user"
+  DB_DATABASE: "nomad"
+  DB_SSL: "false"
+  REDIS_HOST: "local-naguimar-nomad-redis.local.hass.io"
+  REDIS_PORT: "6379"
+  REDIS_DB: "0"
+  NOMAD_STORAGE_PATH: "/media/torrent_disk/project-nomad/storage"
+options:
+  app_key: ""
+  db_password: ""
+schema:
+  app_key: "password"
+  db_password: "password"

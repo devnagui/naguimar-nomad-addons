@@ -1,0 +1,12 @@
+name: "Naguimar NOMAD Redis"
+description: "Private Redis service for the experimental NOMAD Command Center"
+version: "1.0.0"
+slug: "naguimar_nomad_redis"
+arch:
+  - aarch64
+init: false
+startup: system
+boot: manual
+protected: true
+map:
+  - data:rw
