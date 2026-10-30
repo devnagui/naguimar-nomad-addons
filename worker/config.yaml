@@ -1,6 +1,6 @@
 name: "Naguimar NOMAD Worker"
 description: "Protected background downloader for Command Center; start with Redis, MariaDB, and Command Center"
-version: "1.0.1"
+version: "1.0.2"
 slug: "naguimar_nomad_worker"
 arch:
   - aarch64
@@ -28,7 +28,7 @@ environment:
   NOMAD_STORAGE_PATH: "/media/torrent_disk/project-nomad/storage"
   NOMAD_PLATFORM: "haos"
   NOMAD_KIWIX_URL: "http://local-naguimar-kiwix.local.hass.io:8111/wiki/"
-  NOMAD_KIWIX_PUBLIC_URL: "http://192.168.68.122:8111/"
+  NOMAD_KIWIX_PUBLIC_URL: "https://naguimar.tplinkdns.com:9999/app/local_naguimar_kiwix"
 options:
   app_key: ""
   db_password: ""
