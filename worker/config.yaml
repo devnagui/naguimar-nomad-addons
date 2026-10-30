@@ -1,0 +1,34 @@
+name: "Naguimar NOMAD Worker"
+description: "Protected background downloader for Command Center; start with Redis, MariaDB, and Command Center"
+version: "1.0.0"
+slug: "naguimar_nomad_worker"
+arch:
+  - aarch64
+init: false
+startup: application
+boot: manual
+protected: true
+map:
+  - data:rw
+  - media:rw
+environment:
+  NODE_ENV: "production"
+  HOST: "0.0.0.0"
+  PORT: "8080"
+  URL: "http://local-naguimar-nomad-worker.local.hass.io"
+  LOG_LEVEL: "info"
+  DB_HOST: "core-mariadb.local.hass.io"
+  DB_PORT: "3306"
+  DB_USER: "nomad_user"
+  DB_DATABASE: "nomad"
+  DB_SSL: "false"
+  REDIS_HOST: "local-naguimar-nomad-redis.local.hass.io"
+  REDIS_PORT: "6379"
+  REDIS_DB: "0"
+  NOMAD_STORAGE_PATH: "/media/torrent_disk/project-nomad/storage"
+options:
+  app_key: ""
+  db_password: ""
+schema:
+  app_key: "password"
+  db_password: "password"
