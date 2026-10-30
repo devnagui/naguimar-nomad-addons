@@ -1,0 +1,1 @@
+import{u as s}from"./useQuery-CGkAvG5j.js";import{r as t,a}from"./app-CkumpmdD.js";const c=()=>{const[r,n]=t.useState(!0),{data:e}=s({queryKey:["internetStatus"],queryFn:async()=>await a.getInternetStatus()??!1,refetchOnWindowFocus:!1,refetchOnReconnect:!0,refetchOnMount:!1,retry:0,staleTime:1e3*60*5});return t.useEffect(()=>{e!==void 0&&n(e)},[e]),{isOnline:r}};export{c as u};

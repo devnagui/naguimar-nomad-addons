@@ -1,0 +1,7 @@
+configuration:
+  persistence:
+    name: "Persistence"
+    description: "Persist Redis queue state with append-only files."
+  maxmemory_mb:
+    name: "Memory ceiling"
+    description: "Maximum Redis memory in MiB; writes fail instead of evicting queue keys."

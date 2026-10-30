@@ -1,0 +1,45 @@
+configuration:
+  app_key:
+    name: "Application key"
+    description: "Shared secret used by Command Center and Worker (at least 16 characters)."
+  db_host:
+    name: "MariaDB host"
+    description: "Home Assistant service name or IP address for MariaDB."
+  db_port:
+    name: "MariaDB port"
+    description: "MariaDB TCP port."
+  db_user:
+    name: "MariaDB user"
+    description: "Project NOMAD database user."
+  db_password:
+    name: "MariaDB password"
+    description: "Password for the Project NOMAD database user."
+  db_database:
+    name: "MariaDB database"
+    description: "Project NOMAD database name."
+  db_ssl:
+    name: "Use database TLS"
+    description: "Enable TLS for the MariaDB connection."
+  redis_host:
+    name: "Redis host"
+    description: "Home Assistant service name or IP address for Redis."
+  redis_port:
+    name: "Redis port"
+    description: "Redis TCP port."
+  redis_db:
+    name: "Redis database"
+    description: "Redis logical database number."
+  storage_path:
+    name: "Shared storage path"
+    description: "Existing writable path under /media or /share, identical for Command Center and Worker."
+  kiwix_internal_url:
+    name: "Internal Kiwix URL"
+    description: "Kiwix URL reachable on the Home Assistant app network."
+  kiwix_public_url:
+    name: "Public Kiwix URL"
+    description: "Optional browser-facing Kiwix URL. Use a full HTTPS Home Assistant ingress URL for access from an HTTPS HA panel."
+  log_level:
+    name: "Log level"
+    description: "Minimum Project NOMAD log severity."
+network:
+  8080/tcp: "Direct Command Center access (8088 by default)"

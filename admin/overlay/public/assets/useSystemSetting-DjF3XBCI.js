@@ -1,1 +1,0 @@
-import{u as r}from"./useQuery-D2wpG6YK.js";import{a}from"./app-k7CCx0mS.js";const o=e=>{const{key:t,...s}=e;return r({...s,queryKey:["system-setting",t],queryFn:async()=>await a.getSetting(t)})};export{o as u};

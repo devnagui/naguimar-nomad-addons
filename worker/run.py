@@ -1,49 +1,133 @@
 import json
 import os
-import shutil
+import socket
+import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 
-with open("/data/options.json", encoding="utf-8") as options_file:
-    options = json.load(options_file)
+def require_text(options, key):
+    value = options.get(key)
+    if not isinstance(value, str) or not value.strip():
+        raise SystemExit(f"Invalid option {key}: a non-empty value is required")
+    return value.strip()
 
-app_key = options.get("app_key", "")
-db_password = options.get("db_password", "")
-if len(app_key) < 16 or not db_password:
-    raise SystemExit("Configure app_key (16+ characters) and db_password before starting")
 
-usb_storage = Path("/media/torrent_disk/project-nomad/storage")
-app_storage = Path("/app/storage")
-if not usb_storage.is_dir() or not os.access(usb_storage, os.W_OK):
-    raise SystemExit(f"USB storage is unavailable or read-only: {usb_storage}")
+def require_port(options, key):
+    value = options.get(key)
+    if isinstance(value, bool) or not isinstance(value, int) or not 1 <= value <= 65535:
+        raise SystemExit(f"Invalid option {key}: expected an integer from 1 to 65535")
+    return value
 
-if app_storage.is_symlink():
-    if app_storage.resolve() != usb_storage:
-        raise SystemExit(f"Unexpected /app/storage target: {app_storage.resolve()}")
-else:
+
+def validate_host(host, key):
+    if "://" in host or "/" in host or any(character.isspace() for character in host):
+        raise SystemExit(f"Invalid option {key}: use a hostname or IP address only")
+
+
+def validate_url(value, key):
+    parsed = urlparse(value)
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        raise SystemExit(f"Invalid option {key}: expected an http(s) URL")
+    return parsed
+
+
+def prepare_storage(storage, app_storage, allowed_roots=(Path("/media"), Path("/share"))):
+    storage = storage.resolve(strict=False)
+    roots = tuple(root.resolve(strict=False) for root in allowed_roots)
+    if not storage.is_absolute() or not any(storage == root or root in storage.parents for root in roots):
+        raise SystemExit("Invalid option storage_path: use an absolute /media or /share path")
+    if not storage.is_dir() or not os.access(storage, os.R_OK | os.W_OK | os.X_OK):
+        raise SystemExit(f"Storage is missing, inaccessible, or read-only: {storage}")
+    if app_storage.is_symlink():
+        if app_storage.resolve() == storage.resolve():
+            return
+        app_storage.unlink()
     if app_storage.exists():
-        shutil.rmtree(app_storage)
-    app_storage.symlink_to(usb_storage, target_is_directory=True)
+        if not app_storage.is_dir() or any(app_storage.iterdir()):
+            raise SystemExit(f"Refusing to replace non-empty application storage: {app_storage}")
+        app_storage.rmdir()
+    app_storage.symlink_to(storage, target_is_directory=True)
 
-environment = os.environ.copy()
-environment["APP_KEY"] = app_key
-environment["DB_PASSWORD"] = db_password
-worker_command = Path("/app/commands/queue/work.js")
-for command_file in Path("/app/commands").rglob("*.js"):
-    if command_file != worker_command:
-        command_file.unlink()
-ace_module = Path("/app/node_modules/@adonisjs/ace/build/index.js")
-ace_source = ace_module.read_text(encoding="utf-8")
-validation_call = "  validateCommandMetaData(commandConstructor.serialize(), exportPath);"
-if validation_call not in ace_source:
-    raise SystemExit("Unable to apply the Node 24 Ace metadata compatibility patch")
-ace_module.write_text(
-    ace_source.replace(validation_call, ""),
-    encoding="utf-8",
-)
-os.chdir("/app")
-os.execvpe(
-    "node",
-    ["node", "ace", "queue:work", "--all"],
-    environment,
-)
+
+def wait_for_dependency(name, host, port, attempts=10, delay=3):
+    last_error = "unknown error"
+    for attempt in range(attempts):
+        try:
+            with socket.create_connection((host, port), timeout=3):
+                return
+        except OSError as error:
+            last_error = str(error)
+            if attempt + 1 < attempts:
+                time.sleep(delay)
+    raise SystemExit(f"Dependency {name} is unavailable at {host}:{port}: {last_error}")
+
+
+def build_environment(options):
+    app_key = require_text(options, "app_key")
+    if len(app_key) < 16:
+        raise SystemExit("Invalid option app_key: at least 16 characters are required")
+    db_password = require_text(options, "db_password")
+    db_host = require_text(options, "db_host")
+    redis_host = require_text(options, "redis_host")
+    validate_host(db_host, "db_host")
+    validate_host(redis_host, "redis_host")
+    db_port = require_port(options, "db_port")
+    redis_port = require_port(options, "redis_port")
+    redis_db = options.get("redis_db")
+    if isinstance(redis_db, bool) or not isinstance(redis_db, int) or not 0 <= redis_db <= 63:
+        raise SystemExit("Invalid option redis_db: expected an integer from 0 to 63")
+    db_ssl = options.get("db_ssl")
+    if not isinstance(db_ssl, bool):
+        raise SystemExit("Invalid option db_ssl: expected true or false")
+    log_level = options.get("log_level")
+    if log_level not in {"trace", "debug", "info", "warn", "error", "fatal"}:
+        raise SystemExit("Invalid option log_level")
+    kiwix_url = require_text(options, "kiwix_internal_url")
+    kiwix = validate_url(kiwix_url, "kiwix_internal_url")
+    environment = os.environ.copy()
+    environment.update(
+        APP_KEY=app_key,
+        DB_HOST=db_host,
+        DB_PORT=str(db_port),
+        DB_USER=require_text(options, "db_user"),
+        DB_PASSWORD=db_password,
+        DB_DATABASE=require_text(options, "db_database"),
+        DB_SSL=str(db_ssl).lower(),
+        REDIS_HOST=redis_host,
+        REDIS_PORT=str(redis_port),
+        REDIS_DB=str(redis_db),
+        NOMAD_STORAGE_PATH=require_text(options, "storage_path"),
+        NOMAD_KIWIX_URL=kiwix_url,
+        LOG_LEVEL=log_level,
+    )
+    return environment, (db_host, db_port), (redis_host, redis_port), (
+        kiwix.hostname,
+        kiwix.port or (443 if kiwix.scheme == "https" else 80),
+    )
+
+
+def main():
+    with open("/data/options.json", encoding="utf-8") as options_file:
+        options = json.load(options_file)
+    environment, database, redis, kiwix = build_environment(options)
+    prepare_storage(Path(environment["NOMAD_STORAGE_PATH"]), Path("/app/storage"))
+    wait_for_dependency("MariaDB", *database)
+    wait_for_dependency("Redis", *redis)
+    wait_for_dependency("Kiwix", *kiwix)
+    worker_command = Path("/app/commands/queue/work.js")
+    for command_file in Path("/app/commands").rglob("*.js"):
+        if command_file != worker_command:
+            command_file.unlink()
+    ace_module = Path("/app/node_modules/@adonisjs/ace/build/index.js")
+    ace_source = ace_module.read_text(encoding="utf-8")
+    validation_call = "  validateCommandMetaData(commandConstructor.serialize(), exportPath);"
+    if validation_call not in ace_source:
+        raise SystemExit("Unable to apply the Node 24 Ace metadata compatibility patch")
+    ace_module.write_text(ace_source.replace(validation_call, ""), encoding="utf-8")
+    os.chdir("/app")
+    os.execvpe("node", ["node", "ace", "queue:work", "--all"], environment)
+
+
+if __name__ == "__main__":
+    main()

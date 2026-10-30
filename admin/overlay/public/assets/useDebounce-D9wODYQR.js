@@ -1,1 +1,0 @@
-import{r}from"./app-k7CCx0mS.js";const s=()=>{const e=r.useRef(400),t=(u,o=0)=>(...c)=>{clearTimeout(e.current),e.current=window.setTimeout(()=>u(...c),o)};return r.useEffect(()=>()=>{e.current&&clearTimeout(e.current)},[]),{debounce:t}};export{s as u};

@@ -1,0 +1,1 @@
+import{u as n}from"./useQuery-CGkAvG5j.js";import{a as r}from"./app-CkumpmdD.js";const u=t=>{const{data:e,isFetching:i}=n({queryKey:["installed-services"],queryFn:()=>r.getSystemServices()});return{isInstalled:e==null?void 0:e.some(s=>s.service_name===t&&s.installed),loading:i}};export{u};

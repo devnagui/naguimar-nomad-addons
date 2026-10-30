@@ -1,6 +1,6 @@
-name: "Naguimar NOMAD Redis"
-description: "Private Redis service for the experimental NOMAD Command Center"
-version: "1.0.0"
+name: "Project NOMAD Redis"
+description: "Private Redis queue service for Project NOMAD"
+version: "1.1.0"
 slug: "naguimar_nomad_redis"
 arch:
   - aarch64
@@ -10,3 +10,9 @@ boot: manual
 protected: true
 map:
   - data:rw
+options:
+  persistence: true
+  maxmemory_mb: 128
+schema:
+  persistence: "bool"
+  maxmemory_mb: "int(32,4096)"

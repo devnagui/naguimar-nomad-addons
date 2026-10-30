@@ -1,6 +1,6 @@
-name: "Naguimar NOMAD Worker"
-description: "Protected background downloader for Command Center; start with Redis, MariaDB, and Command Center"
-version: "1.0.2"
+name: "Project NOMAD Worker"
+description: "Project NOMAD background queue worker"
+version: "1.1.0"
 slug: "naguimar_nomad_worker"
 arch:
   - aarch64
@@ -11,27 +11,38 @@ protected: true
 map:
   - data:rw
   - media:rw
+  - share:rw
 environment:
   NODE_ENV: "production"
   HOST: "0.0.0.0"
   PORT: "8080"
-  URL: "http://local-naguimar-nomad-worker.local.hass.io"
-  LOG_LEVEL: "info"
-  DB_HOST: "core-mariadb.local.hass.io"
-  DB_PORT: "3306"
-  DB_USER: "nomad_user"
-  DB_DATABASE: "nomad"
-  DB_SSL: "false"
-  REDIS_HOST: "local-naguimar-nomad-redis.local.hass.io"
-  REDIS_PORT: "6379"
-  REDIS_DB: "0"
-  NOMAD_STORAGE_PATH: "/media/torrent_disk/project-nomad/storage"
+  URL: "http://localhost:8080"
   NOMAD_PLATFORM: "haos"
-  NOMAD_KIWIX_URL: "http://local-naguimar-kiwix.local.hass.io:8111/wiki/"
-  NOMAD_KIWIX_PUBLIC_URL: "https://naguimar.tplinkdns.com:9999/app/local_naguimar_kiwix"
 options:
   app_key: ""
+  db_host: "core-mariadb.local.hass.io"
+  db_port: 3306
+  db_user: "nomad_user"
   db_password: ""
+  db_database: "nomad"
+  db_ssl: false
+  redis_host: "local-naguimar-nomad-redis.local.hass.io"
+  redis_port: 6379
+  redis_db: 0
+  storage_path: "/media/torrent_disk/project-nomad/storage"
+  kiwix_internal_url: "http://local-naguimar-kiwix.local.hass.io:8111/wiki/"
+  log_level: "info"
 schema:
   app_key: "password"
+  db_host: "str"
+  db_port: "int(1,65535)"
+  db_user: "str"
   db_password: "password"
+  db_database: "str"
+  db_ssl: "bool"
+  redis_host: "str"
+  redis_port: "int(1,65535)"
+  redis_db: "int(0,63)"
+  storage_path: "str"
+  kiwix_internal_url: "str"
+  log_level: "list(trace|debug|info|warn|error|fatal)"
