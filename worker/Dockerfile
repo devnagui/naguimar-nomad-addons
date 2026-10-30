@@ -1,4 +1,4 @@
-FROM ghcr.io/devnagui/project-nomad:1.35.2
+FROM ghcr.io/devnagui/project-nomad:1.35.2-haos.1
 
 COPY run.py /ha-addon-run.py
 

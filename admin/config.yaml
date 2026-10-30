@@ -1,6 +1,6 @@
 name: "Naguimar NOMAD Command Center"
 description: "Experimental protected ARM64 Command Center without Docker access"
-version: "1.35.2"
+version: "1.35.2-haos.1"
 slug: "naguimar_nomad_admin"
 arch:
   - aarch64
@@ -31,6 +31,9 @@ environment:
   REDIS_PORT: "6379"
   REDIS_DB: "0"
   NOMAD_STORAGE_PATH: "/media/torrent_disk/project-nomad/storage"
+  NOMAD_PLATFORM: "haos"
+  NOMAD_KIWIX_URL: "http://local-naguimar-kiwix.local.hass.io:8111/wiki/"
+  NOMAD_KIWIX_PUBLIC_URL: "http://192.168.68.122:8111/"
 options:
   app_key: ""
   db_password: ""
